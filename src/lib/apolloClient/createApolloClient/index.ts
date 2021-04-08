@@ -28,7 +28,7 @@ function getEndpoint() {
     endpoint = `${origin}/api/`
   } else {
     // TODO fix for vercel.com
-    endpoint = `https://api.prisma-cms.com`
+    endpoint = `http://api.prisma-cms.com`
   }
 
   return endpoint
