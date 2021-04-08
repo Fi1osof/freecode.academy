@@ -28,12 +28,7 @@ function getEndpoint() {
     endpoint = `${origin}/api/`
   } else {
     // TODO fix for vercel.com
-
-    // eslint-disable-next-line no-restricted-modules
-    const os = require('os')
-    const hostname = os.hostname()
-    const PORT = (process.env.PORT && parseInt(process.env.PORT, 10)) || 3000
-    endpoint = `http://${hostname}:${PORT}/api/`
+    endpoint = `https://api.prisma-cms.com`
   }
 
   return endpoint
