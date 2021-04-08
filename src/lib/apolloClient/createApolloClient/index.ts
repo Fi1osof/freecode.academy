@@ -28,7 +28,7 @@ function getEndpoint() {
     endpoint = `${origin}/api/`
   } else {
     // TODO fix for vercel.com
-    endpoint = `http://api.prisma-cms.com`
+    endpoint = process.env.API_ENDPOINT || `https://freecode.academy/api/`
   }
 
   return endpoint
